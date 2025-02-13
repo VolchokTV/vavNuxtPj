@@ -6,6 +6,7 @@
 </template>
 
 <script setup lang="ts">
+    definePageMeta({ layout: "post" });
     const route = useRoute();
 
 </script>

@@ -1,11 +1,11 @@
 <template>
     <div class="wrapper">
-      <header>Posts Header В.А.В</header>
+      <header>Post Header В.А.В</header>
       <AppMenu />
       <div class="container">
         <slot />
       </div>
-      <footer>Posts Footer В.А.В</footer>
+      <footer>Post Footer В.А.В</footer>
     </div>
   </template>
   
@@ -25,7 +25,7 @@
   footer {
     height: 100px;
     background-color: lightgrey;
-    color: red;
+    color: greenyellow;
     font-size: 32px;
     display: flex;
     justify-content: center;
