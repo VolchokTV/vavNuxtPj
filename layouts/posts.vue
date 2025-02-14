@@ -1,6 +1,13 @@
 <template>
     <div class="wrapper">
-      <header>Posts Header В.А.В</header>
+      <header>
+        <nav>
+            <ul>
+              <li><NuxtLink to="/">Home</NuxtLink></li>
+              <li><NuxtLink to="/about">About</NuxtLink></li>
+            </ul>
+        </nav>
+      </header>
       <AppMenu />
       <div class="container">
         <slot />
@@ -28,7 +35,14 @@
     color: red;
     font-size: 32px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
   }
+
+  nav ul li{
+    display: inline-block;
+    list-style: none;    
+    padding-right: 20px    
+  }
+
   </style>

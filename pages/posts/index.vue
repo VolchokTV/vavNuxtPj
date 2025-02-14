@@ -4,7 +4,7 @@
         <li v-if="status === 'pending'">Loading...</li>
    
         <li v-else class="posts" v-for="post in posts" :key="post.id">
-            {{ post.title }}
+          <NuxtLink :to="{name :'posts-id', params: {id: post.id}}"> {{ post.title }} </NuxtLink>
         </li>
     </ul>
 
@@ -12,6 +12,7 @@
 
 <script setup lang="ts">
     definePageMeta({ layout: "posts" });
+    
     interface IPost{
         id: number,
         title: string

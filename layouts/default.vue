@@ -1,6 +1,8 @@
 <template>
     <div class="wrapper">
-      <header>В.А.В NUXT 3 Home Work</header>
+      <header>
+        <h2>В.А.В NUXT 3 Home Work</h2>        
+      </header>
       <AppMenu />
       <div class="container">
         <slot />
@@ -21,14 +23,41 @@
   .container {
     flex-grow: 1;
   }
-  header,
+  header
+  {
+    height: 100px;
+    background-color: lightgrey;
+    color: black;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
   footer {
     height: 100px;
     background-color: lightgrey;
     color: black;
-    font-size: 32px;
+    font-size: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
+
+  nav ul li{
+    display: inline-block;
+    list-style: none;    
+    padding-right: 20px;
+    color: brown;
+  }
+
+  nav {
+    display: inline-block;
+    padding-left: 20px;
+    justify-content: left;
+    
+  }
+
   </style>

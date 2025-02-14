@@ -1,6 +1,14 @@
 <template>
     <div class="wrapper">
-      <header>Post Header В.А.В</header>
+      <header>
+        <nav>
+            <ul>
+              <li><NuxtLink to="/">Home</NuxtLink></li>
+                <li><NuxtLink to="/about">About</NuxtLink></li>
+                <li><NuxtLink to="/posts">Posts</NuxtLink></li>
+            </ul>
+        </nav>
+      </header>
       <AppMenu />
       <div class="container">
         <slot />
@@ -23,6 +31,7 @@
   }
   header,
   footer {
+    display: flex;
     height: 100px;
     background-color: lightgrey;
     color: greenyellow;
@@ -31,4 +40,6 @@
     justify-content: center;
     align-items: center;
   }
+
+  nav{justify-content: left;}
   </style>
